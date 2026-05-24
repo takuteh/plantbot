@@ -1,0 +1,10 @@
+[Unit]
+Description=Soil Sensor
+
+[Service]
+ExecStart=/home/pi/venv/bin/python3 /home/pi/plantbot/src/soil_humidity.py
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
